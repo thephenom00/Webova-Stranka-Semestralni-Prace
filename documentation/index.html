@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <title>Dokumentace - OneNote</title>
+</head>
+<body>
+	<span id="arrow"><a href="#top">⬆️</a></span>
+    <h1 id="top">Dokumentace k semestrální práci OneNote</h1>
+	<h2>Obsah</h2>
+	<ol>
+		<li><a href="#zadani">Zadání</a></li>
+		<li><a href="#manual">Uživatelská příručka</a></li>
+		<li><a href="#implementace">Implementace</a></li>
+		<li><a href="#database">Databáze</a></li>
+		<li><a href="#table">Hodnotící tabulka</a></li>
+		<li><a href="#documentation">Vygenerovaná dokumentace</a></li>
+	</ol>
+	<hr>
+	<h2 id="zadani">1. Zadání</h2>
+	<p>Zadáním bylo vytvořit dynamické webové stránky, které budou sloužit jako ukládání poznámek. Uživatel bude moci poznámky přidat, označit za hotové či smazat. Každá poznámka obsahuje název, datum do kdy musí být dokončena, stupeň důležitosti a nakonec samotný popis. Každý uživatel má po úspěšné registraci a přihlášení přístup pouze ke svým vlastním poznámkám</p>
+	<hr>
+	<h2 id="manual">2. Uživatelská příručka</h2>
+	<p>V této uživatelské příručce se dozvíte vše týkající se následujících témat:</p>
+	<ol>
+		<li>Přihlášení</li>
+		<li>Registrace</li>
+		<li>Přidání poznámky</li>
+		<li>Označení / Smazání poznámky</li>
+		<li>Úprava vzhledu</li>
+	</ol>
+
+	<h3>Přihlašování</h3>
+	<p>Na hlavní stránku lze přejít pouze v případě registrace a přihlášení. Formulář pro přihlášení vypadá následovně:</p>
+	<div class="loginImg"><img class='login' src="img/login.png" alt="Přihlášení"></div>
+	<p>Do formulářových okének je zapotřebí vyplnit:</p>
+	<ul>
+		<li>Vaše uživatelské jméno, které jste zadali při registraci</li>
+		<li>Vaše heslo</li>
+	</ul>
+	<p>V případě, že jste se úspěšně přihlásili, budete přesměrováni na domovskou stránku.</p>
+	<p>V případě, že ještě nemáte účet, kliněte na odkaz s názvem &quot;Zaregistrujte se&quot;</p>
+
+    <h3>Registrace</h3>
+	<p>Po kliknutí na odkaz pro zaregistrování se dostanete na stránku s registračním formulářem, který vypadá takto:</p>
+	<img class='register' src="img/register.png" alt="Registrace">
+	<p>Do okének je zapotřebí vyplnit:</p>
+	<ul>
+		<li>Vaše zvolená přezdívka</li>
+		<li>Váš email</li>
+		<li>Zvolené heslo o délce alespoň 4 znaků</li>
+		<li>To samé heslo znovu pro kontrolu</li>
+	</ul>
+	<p>Po úspěšné registraci budete přesměrováni na stránku s přihlašovacím formulářem  </p>
+
+
+    <h3 id="mainPage">Hlavní stránka</h3>
+    <p>Po registraci a přihlášení budete moci poprvé navštívit hlavní stránku vypadající tímto způsobem:</p>
+    <img class='main' src="img/main.png" alt="Hlavní stránka">
+    <p id="notePage">Po vyplnění potřebných údajů budete přesměrování na stránku se všemi poznámkami</p>
+	<p>Všechny poznámky jsou seřazeny podle data do kdy musí být splněna</p>
+    <img class='navbar' src="img/notes.png" alt="Stránka s úkoly">
+
+
+	<p>Poznámku mohu buď:</p>
+	<ul>
+		<li>Označit za hotovou</li>
+		<li>Smazat</li>
+	</ul>
+
+
+	<p>Pomocí následujících tlačítek</p>
+	<img class='buttons' src="img/buttons.png" alt="Tlačítka">
+
+
+	<p>Dále je možnost filtrace všech poznámek podle důležitosti</p>
+	<p>Zvolíte-li jednu z možností, vypíší se na stránku pouze ty poznámky s konkrétní důležitostí</p>
+	<img class='filter' src="img/filter.png" alt="Filtr">
+
+	<p>V případě více poznámek, je poslední funkcí přesměrováni na další stránku se zbylými poznámkami, kterou najdete na úplném konci stránky</p>
+	<img class='pagiation' src="img/pagiation.png" alt="Stránkování">
+
+    <p class="naStrankach">Stránka nabízí také změnení vzhledu. Nastavit ji lze kliknutím na tlačítko &quot;Settings&quot; v menu stránky</p>
+	<img class='navbar' src="img/navbar.png" alt="Navigační lišta">
+
+	<p>Vyberete-li si motiv a kliknete na tlačítko &quot;Aplikovat&quot; celý web bude mít nyní tmavou podobu</p>
+	<div class="darkest">
+		<img class = "darkimg" src="img/darkmodetwo.png" alt="Dark mode">
+		<img class = "darkimg" src="img/darkmodeone.png" alt="Dark mode">
+	</div>
+
+
+
+	
+
+
+
+<hr>
+	<h2 id="implementace">3. Implementace</h2>
+	<ol>
+		<li>Jazyky a soubory</li>
+		<li>Obsluha formulářů, osolení hesel, přesměrování</li>
+		<li>Přidávání poznámek</li>
+		<li>Bezpečnost</li>
+	</ol>
+	<h3>Jazyky a soubory</h3>
+		<p>Pro realizaci byly zvoleny následující technologie:</p>
+	<ul>
+		<li>HTML5</li>
+		<li>CSS</li>
+		<li>JavaScript</li>
+		<li>PHP</li>
+	</ul>
+
+	<p>HTML5 a CSS byly použity pro vytvoření struktury a stylu stránky</p>
+	<p>Zbylé dvě byly použity na back end, přesněji obsluha formulářů, přidávání poznámek nebo přidávání dat do databází</p>
+
+	<h3>Obsluha formulářů</h3>
+	<h4>1. Registrace</h4>
+	<p>Při registraci se kontroluje, jestli uživatel zadal údaje - své uživatelské jméno i email ve správném formátu a jestli se obě hesla shodují. Poté předá veškeré údaje fuknci db_add_user, která navíc k heslu přidá sůl, následně zahashuje a pošle do databáze. Naopak pookud dojde k zadání špatného formátu, vyskočí pomocí JavaScriptu text informující o chybnosti konkrétních přihlašovacích údajů. Podmínky pro tyto údaje zajišťují funkce validate v souboru /core/lib/validate.js </p>
+	<img class="registerr" src="img/registerr.png" alt="register">
+
+
+
+	<p>Pokud uživatel zadá validní údaje, ale dojde ke kolizi stejného uživatelského jména či emailu s jiným uživatelem, vyskočí pomocí JavaScriptu text informující o tom, že uživatel zadal již existující údaje.</p>
+	<img class='emailpouzit' src="img/emailpouzit.png" alt="email">
+
+	<p>Poslední věc týkající se obsluhy registrového formuláře je AJAX informující uživatele ihned <span class="bold">bez načtení stránky</span> zda-li je uživatelské jméno zaregistrované či ne</p>
+	<img src="img/ajax.png" class='ajax' alt="ajax">
+
+	<h4>2. Přihlašování</h4>
+	<p>Při přihlašování se kontroluje správný formát zadaných údajů a neprázdný formulář. Posléze se naváže spojení s databází, vyhledá se pole, ve kterém leží uživatelské jméno shodné s tím zadaným (pomocí funkce getUserByUserName), a pak dojde k ověření hesla, které se předá nejdříve funkci passwordVerify.</p>
+	<p>Ta porovná zahashované heslo v databázi s heslem které napsal uživatel a vrátí proměnnou true nebo false. Pokud bude vrácen true, uživateli začne relace a posléze je přesměrován na hlavní stránku. V opačném případě se objeví varovná hláška obdobně jako v případu registrace.</p>
+
+	<h4 class="addnote">3. Přidávání poznámek</h4>
+	<p>
+		Formulář pro přidávání poznámek rovněž jako v případě registrace a přihlašování ověřuje jestli uživatel vyplnil validní údaje. Zde nebylo kromě kontroly validního data (zda-li uživatel zadal datum které již bylo) třeba více validace. V případě, že je datum v pořádku a ostatní políčka nejsou prázdná dojde k zapsání poznámky do databáze a následné vykreslení na stránku. V opačném případě se objeví varovná hláška.
+	</p>
+	<img class='timeTravel' src="img/timetravel.png" alt="varovná hláška">
+
+	<p>
+		Dále je implementována další AJAX funkce, která porovná uživatelův název poznámky se statickými daty uloženy v array (nachází se v souboru suggestions.php). Poté je nabídne uživateli formou textu pod políčkem pro název poznámky.
+	</p>
+
+	<img id='sugg' src="img/suggestions.png" alt="Nabídka">
+
+	<p>
+		Vyplní-li užívatel potřebné údaje s validním datem, bude přesměrován na stránku se všemi poznámkami <a href="#notePage">viz.</a>
+	</p>
+
+
+
+	<h4 class="space">4. Bezpečnost</h4>
+	<p>
+		Na stránce bylo použito několik opatření proti útokům typu XSS a CSRF. 
+	</p>
+	<p class="space">1. htmlspecialchars()</p>
+	<p>
+		Jedním bylo použití funkce htmlspecialchars() na všechna data získaná z formulářů. Tato funkce zabraňuje útokům XSS tím, že konvertuje speciální znaky na jejich HTML entity, což znemožňuje útočníkovi vložit škodlivý kód do stránky.
+	</p>
+	<p class="space">2. unikátní token</p>
+		<p>
+			Při každém odeslání formuláře na vytvořní poznámky je vygenerován unikátní token, který je uložen v session uživatele a také je vložen do formuláře jako skrytý input. Při odeslání formuláře ověřujeme, zda token odpovídá tokenu uloženému v session.
+		</p>
+	<hr>
+
+	<h2 id="database">4. Databáze</h2>
+	<p>Databáze je vytvořena ve formátu jSON. Byly do ni přidávány pole s konkrétními daty pomocí funkce json_decode a json_encode a skládá se přesně ze dvou souborů</p>
+	<h3>1. users.json</h3>
+	<p class="loginText">
+		Každý nový uživatel se přidá do souboru users.json pouze v případě, validní registrace. Do databáze se uloží následující informace:
+	</p>
+		<ul>
+			<li>jeho unikátní ID</li>
+			<li>uživatelské jméno</li>
+			<li>email</li>
+			<li>zahashované heslo</li>
+			<li>náhodně vygenerovaná sůl</li>
+			<li>téma (defaultně nastaveno na světlé)</li>
+		</ul>
+
+	<h3>2. notes.json</h3>
+	<p>
+		Při úspěšném příhlášení a přidání validní poznámky, se přidá do souboru notes.json následující informace:
+	</p>
+		<ul>
+			<li>unikátní ID poznámky</li>
+			<li>její název</li>
+			<li>datum do kdy má být hotova</li>
+			<li>důležitost</li>
+			<li>samotný text poznámky</li>
+			<li>datum vytvoření</li>
+			<li>ID uživatele, který ji přidal <span class="smallText">*z důvodu, aby pro projetí for cyklem, se uživateli objevily pouze poznámky které vytvořil on sám</span></li>
+		</ul>
+
+	<hr>
+	<h2 id="table">5. Hodnotící tabulka</h2>
+	<img id='table' src="img/table.png" alt="Tabulka">
+	<hr>
+	<h2 id="documentation">6. Vygenerovaná dokumentace</h2>
+	<a href="phpdoc/index.html">zde</a>
+	
+
+	
+	
+</body>
+</html>

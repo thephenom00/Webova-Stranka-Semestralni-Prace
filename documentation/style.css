@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+h1{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+h2{
+    font-size: 25px;
+}
+
+h4{
+    font-size: 22px;
+}
+
+ol, ul{
+    margin-left: 30px;
+}
+
+li{
+    font-size: 20px;
+}
+
+li a{
+    color: black;
+}
+
+p{
+    font-size: 22px;
+}
+
+hr{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.navbar{
+    width: 1200px;
+    margin-bottom: 10px;
+}
+
+.naStrankach{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+h3{
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+
+.login, .register{
+    display: block;
+    width:300px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.main{
+    width: 1200px;
+    margin-bottom: 100px;
+}
+
+.buttons{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 150px;
+}
+
+.filter{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 600px;
+}
+
+.pagiation{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+}
+
+.darkimg{
+    width: 597px;
+    display: inline-block;
+}
+
+img{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.registerr, .emailpouzit, .ajax{
+    width: 350px;
+}
+
+.bold{
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+.space {
+    margin-top: 20px;
+}
+
+.addnote{
+    margin-top: 20px;
+}
+
+.timeTravel{
+    width: 400px;
+}
+
+.smallText{
+    font-size: 15px;
+    font-style: oblique;
+}
+
+#sugg{
+    width: 400px;
+}
+
+#table{
+    width: 100%;
+}
+
+#arrow{
+    font-size: 30px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}

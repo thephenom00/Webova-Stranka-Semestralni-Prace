@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+/************* NAV BAR *************/
+nav{
+    display: none;
+}
+
+ul{
+    display: none;
+}
+
+/************* NAV BAR *************/
+
+/************* ADD NOTE *************/
+
+.boxIndex {
+    background-color: white;
+    width: 500px;
+    height: 700px;
+    position: absolute;
+    border-radius: 8px;
+    transform: translate(-50%, -50%);
+    top: 348px;
+    left: 50%;
+    border:solid black;
+}
+
+.make {
+    color: black;
+    border:rgb(0, 0, 0);
+    padding: 10px 0 10px 20px;
+    font-size: 14px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+.boxIndex label{
+    color:  black;
+    padding: 10px 0 5px 20px;
+    font-size: 22px;
+    display: block;
+}
+
+.boxIndex input[type="date"], ::placeholder, select{
+    color: black;
+}
+
+.boxIndex input, textarea, select{
+    background-color: rgb(255, 255, 255);
+    margin-left: 25px;
+    color: black;
+}
+
+.boxIndex input, select{
+    font-size: 18px;
+    width: 450px;
+    height: 35px;
+    padding-left: 5px;
+}
+
+.boxIndex textarea{
+    padding: 5px;
+    font-size: 18px;
+    width: 450px;
+    height: 200px;
+    outline: none;
+}
+
+
+.boxIndex input[type=submit]{
+    width: 130px;
+    height: 40px;
+    margin-top: 5px;
+    margin-left: 170px;
+    background-color: white;
+    color: black;
+    border: solid black;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.container .timeTravel{
+    color:black;
+    display:block;
+    margin: 0px 0px 0px 25px;
+}
+
+.boxIndex #sugg{
+    padding-left: 24px;
+    margin-top: 3px;
+}
+
+.boxIndex #suggestion{
+    color:  black;
+}
+
+ul.wrapper{
+    margin-top: 70px;
+}
+
+.filterWrapper{
+    display:none;
+}   
+
+.filterWrapper .importanceLabel{
+    display:none;
+}
+
+
+
+.filterWrapper #importanceFilter{
+    display:none;
+}
+
+/************* ADD NOTE *************/
+
+
+/************* listNotes *************/
+
+.note {
+    overflow: auto;
+    color: black;
+    border: solid black;
+}
+
+.wrapper {
+    gap: 30px;
+    margin: 70px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,265px);
+}
+
+.wrapper li{
+    list-style: none;
+    height: 300px;
+    border-radius: 10px;
+    padding: 15px 20px 15px;
+}
+
+.wrapper .note{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.note button{
+    display: none; 
+
+}
+
+
+.note p{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.note .currentDate{
+    font-size: 14px;
+    display: inline;
+    position: relative;
+    float:right;
+}
+
+.note span{
+    word-break: break-all;
+    word-wrap: break-word;
+    font-size: 16px;
+    display: block;
+    margin-top: 5px;
+}
+
+.note .bottom-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-top: 2px solid rgb(0, 0, 0);
+    padding-top: 1px;
+    padding-bottom: 0px;
+}
+
+.bottom-content span{
+    flex: 1;
+}
+
+li .border{
+    margin-top: 3px;
+    margin-bottom: -2px;
+    margin-left: -25px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    width: 270px;
+}
+
+/************* listNotes *************/
+
+
+
+/************* login *************/
+
+/*** logo ***/
+#loginLogo {
+    display: none;
+}
+
+
+#boxLogin {
+    display: none;
+}
+
+
+
+
+/************* login *************/
+
+
+
+/************* register *************/
+
+#boxRegister {
+    display: none;
+}
+
+
+/************ MODE *************/
+form select.mode{
+    display: none;
+}
+
+form .modeButton{
+    display: none;
+}
+
+#footer {
+    display: none;
+}
+
+.pagiation{
+    display: none;
+}
+
+.pagiation select{
+    display: none;
+}
+
+.pagiation label{
+    display: none;
+}
+
+.filter{
+    display: none;
+}

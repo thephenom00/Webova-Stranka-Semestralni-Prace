@@ -1,0 +1,1 @@
+<footer id="footer">Copyright &copy; 2023 All rights reserved</footer>
